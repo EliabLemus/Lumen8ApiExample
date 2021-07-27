@@ -29,6 +29,16 @@ Start the  project using:
 ```bash
 php -S localhost:<port> -t public
 ```
+To create the database (sqlite) use: 
+1. create database.sqlite inside database folder
+2.
+```bash
+php artisan make:migration CreateAuthorsTable --create=authors
+```
+3.
+```bash
+php artisan migrate
+```
 
 Routes: 
     GET localhost:<port>/authors
